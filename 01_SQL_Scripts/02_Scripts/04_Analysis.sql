@@ -53,7 +53,7 @@ GROUP BY member_casual;
 
 -- INSIGHTS: Members: 63,99%; Casual: 36,01%.
 -----------------------------------------------------------
--- QUESTION 3: Wich days of the week do Members vs Casuals ride more?
+-- QUESTION 3: Which days of the week do Members vs Casuals ride more?
 
 -- STEP 1: VOLUME ANALYSIS (Market Share per Day)
 -- Goal: See who dominates the total rides each day.
@@ -125,7 +125,7 @@ ORDER BY member_casual, avg_ride_length_minutes, max_ride_length_minutes;
     -- CASUALS: Longer rides (avg 22.6 mins, max 1574 mins)
     -- MEMBERS: Shorter rides (avg 12.33 mins, max 1500 mins)
 
--- QUESTION 5. Seasonality (months)
+-- QUESTION 5: Seasonality (months)
 
 SELECT
     member_casual,
@@ -179,7 +179,7 @@ GROUP BY day_of_week, DATENAME(WEEKDAY, started_at),member_casual
 ORDER BY member_casual, day_of_week
 ;
 
---Standar Deviation Analysis (Optional)
+--Standard Deviation Analysis (Optional)
 SELECT
     member_casual,
     CAST(AVG(ride_length_minutes) AS DECIMAL (7,2)) AS avg_duration,
