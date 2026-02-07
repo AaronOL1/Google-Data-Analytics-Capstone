@@ -1,38 +1,49 @@
-# 🚴‍♂️ Cyclistic Bike-Share Analysis (Google Data Analytics Capstone)
+# 🚴 Cyclistic Bike-Share Analysis (Google Capstone)
 
-## 📌 Project Overview
-**Goal:** Design marketing strategies to convert casual riders into annual members by analyzing historical bike trip data.
-**Role:** Junior Data Analyst
-**Tools:** SQL Server (SSMS) for Data Cleaning & Analysis.
-**Dataset:** 12 months of historical trip data (5.7 million rows).
+## 📌 1. Introduction
+**Project:** Google Data Analytics Professional Certificate - Capstone Project.
+**Role:** Junior Data Analyst at Cyclistic, a bike-share company in Chicago.
+**Goal:** Design marketing strategies to convert casual riders into annual members.
 
-## 🔍 Key Insights (Behavioral Segmentation)
-Through SQL analysis, two distinct user profiles emerged:
+## ❓ 2. Business Task (The "Ask" Phase)
+The director of marketing, **Lily Moreno**, believes the company’s future success depends on maximizing the number of annual memberships [1]. Therefore, my team wants to understand how casual riders and annual members use Cyclistic bikes differently.
 
-* **1. The "Efficient Commuter" (Annual Members)**
-    * **Routine:** Consistent usage Mon-Fri with minimal variance.
-    * **Duration:** Short, flat travel times (~12-13 mins) indicating A-to-B utility trips.
-    * **Consistency:** Low Standard Deviation (31.29), proving highly predictable behavior.
-    * **Seasonality:** Maintains activity in winter (necessity-based travel).
+**Primary Question:**
+* How do annual members and casual riders use Cyclistic bikes differently?
 
-* **2. The "Weekend Explorer" (Casual Riders)**
-    * **Routine:** Usage spikes dramatically on weekends (Sat/Sun).
-    * **Duration:** Rides are ~2x longer (~26 mins), confirming leisure/recreational intent.
-    * **Consistency:** High Standard Deviation (81.42), proving chaotic/unstructured usage.
-    * **Seasonality:** Activity drops by ~92% in winter (fair-weather dependence).
+**Key Stakeholders:**
+* **Lily Moreno:** Director of Marketing.
+* **Cyclistic Executive Team:** Detail-oriented executive team responsible for approval.
 
-## 🛠️ SQL Skills Demonstrated
-* **Data Cleaning:** Handling NULLs, duplicate removal, and data type casting.
-* **Analysis:** Aggregations (`GROUP BY`), Date functions (`DATENAME`, `DATEPART`).
-* **Advanced SQL:**
-    * `CTEs` (Common Table Expressions) for complex calculations.
-    * `Window Functions` (`OVER`, `PARTITION BY`) for market share analysis.
-    * Statistical functions (`STDEV`) for volatility analysis.
+## 📂 3. Data Source (The "Prepare" Phase)
+* **Source:** Public data provided by **Motivate International Inc.** (Divvy Trip Data).
+* **Format:** 12 Monthly CSV files containing ride data (Ride ID, timestamps, station info, user type).
+* **License:** [Data License Agreement](https://ride.divvybikes.com/data-license-agreement).
+* *Note: Data privacy is protected; no personal user information is available.*
 
-## 📂 Project Structure
-* `01_Data_Cleaning.sql`: Standardization and null handling.
-* `02_Data_Analysis.sql`: Exploratory analysis and KPI calculation.
-* `03_Final_Insights.sql`: Determining user profiles (Commuter vs. Explorer).
+## 🛠️ 4. Tools Used
+* **SQL Server:** For Data Cleaning, Unioning (merging 12 months), and Analysis.
+* **Power BI / Tableau:** For Data Visualization and Dashboarding.
 
----
-*Analysis by Aaron Olmedo | February 2026*
+## 📊 5. Key Insights (The "Analyze" Phase)
+Through SQL analysis, two distinct user profiles emerged based on ride duration, frequency, and consistency:
+
+### 👤 The "Efficient Commuter" (Annual Members)
+* **Routine:** Consistent usage Mon-Fri with minimal daily variance.
+* **Duration:** Short, flat travel times (**~12-13 mins**) indicating A-to-B utility trips.
+* **Consistency:** **Low Standard Deviation (31.29)**, mathematically proving highly predictable behavior.
+* **Seasonality:** Maintains a "base load" of activity even in winter (necessity-based travel).
+
+### 🌍 The "Weekend Explorer" (Casual Riders)
+* **Routine:** Usage spikes dramatically on weekends (Sat/Sun).
+* **Duration:** Rides are ~2x longer (**~26 mins**), confirming leisure/recreational intent.
+* **Consistency:** **High Standard Deviation (81.42)**, proving chaotic/unstructured usage patterns.
+* **Seasonality:** Activity drops by ~92% in winter (fair-weather dependence).
+
+## 📈 6. Deliverables Status
+- [x] 1. A clear statement of the business task.
+- [x] 2. A description of all data sources used.
+- [x] 3. Documentation of any cleaning or manipulation of data.
+- [x] 4. A summary of analysis.
+- [ ] 5. Supporting visualizations and key findings.
+- [ ] 6. Top three recommendations.
