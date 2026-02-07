@@ -92,8 +92,3 @@ SELECT TOP 10 * FROM Cyclistic_Final;
 
 -- Check total rows (Should be close to 5.5 million)
 SELECT COUNT (*) AS Total_Rows FROM Cyclistic_Final ;
-      
-
-
-
-
