@@ -2,7 +2,7 @@
 
 > 📢 **Executive Presentation:**
 > Looking for the high-level business strategy?
-> 👉 [**Download the Strategic Slide Deck (PDF)**](05_Presentation/Cyclistic_Strategy_Presentation.pdf)
+> 👉 [**Download the Strategic Slide Deck (PDF)**](04_Presentation/Cyclistic_Strategy_Presentation.pdf)
 
 ## 📌 1. Introduction
 * **Project:** Google Data Analytics Professional Certificate - Capstone Project.
@@ -37,15 +37,15 @@ Through SQL analysis and Python visualization, two distinct user profiles emerge
 *Generated using Python (Pandas/Seaborn) to ensure brand consistency.*
 
 #### 1. Market Share (The Opportunity)
-![Market Share](05_Visualization/Viz_1_MarketShare.png)
+![Market Share](03_Visualization/01_Viz_MarketShare.png)
 > **Insight:** Casual riders represent **36%** of our user base. This is a massive pool of potential conversions already familiar with our brand.
 
 #### 2. Seasonality (The "Summer Spike")
-![Seasonality](05_Visualization/Viz_2_Seasonality.png)
+![Seasonality](03_Visualization/02_Viz_Seasonality.png)
 > **Insight:** Casual riders are "fair-weather" users. Marketing campaigns should launch in **early May** to capture the rising wave before the summer peak.
 
 #### 3. Riding Habits (Weekends vs. Weekdays)
-![Duration](05_Visualization/Viz_3_Duration.png)
+![Duration](03_Visualization/03_Viz_Duration.png)
 > **Insight:** Casuals ride **2x longer** on weekends. They use bikes for leisure, while Members use them for efficient commuting.
 
 ### 👤 The "Efficient Commuter" (Annual Members)
